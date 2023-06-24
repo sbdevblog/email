@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * @copyright Copyright (c) sbdevblog (http://www.sbdevblog.com)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../Magento/Email/etc/email_templates.xsd">
+    <template id="sbdevblog_inquiry_inquiry_email_template" label="Inquiry Email Template" file="inquiry_template.html" type="html" module="SbDevBlog_Email" area="frontend" />
+</config>

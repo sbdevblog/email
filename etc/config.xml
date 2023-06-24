@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @copyright Copyright (c) sbdevblog (http://www.sbdevblog.com)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <sbdevblog_inquiry>
+            <inquiry>
+                <enable>1</enable>
+                <email_template>sbdevblog_inquiry_inquiry_email_template</email_template>
+            </inquiry>
+        </sbdevblog_inquiry>
+    </default>
+</config>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @copyright Copyright (c) sbdevblog (http://www.sbdevblog.com)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="sbdevblog" translate="label" sortOrder="10">
+            <label>SB Dev Blog</label>
+        </tab>
+        <section id="sbdevblog_inquiry" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Inquiry</label>
+            <tab>sbdevblog</tab>
+            <resource>SbDevBlog_Config::sbdevblog_config_inquiry</resource>
+            <group id="inquiry" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>Additional Validation</label>
+                <field id="enable" translate="label" sortOrder="1" showInDefault="1" showInStore="1" showInWebsite="1"
+                       type="select">
+                    <label>Enable Inquiry</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="email_template" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10"
+                       translate="label comment" type="select">
+                    <label>Inquiry Email Template</label>
+                    <source_model>Magento\Config\Model\Config\Source\Email\Template</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
